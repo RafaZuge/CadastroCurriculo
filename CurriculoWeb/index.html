@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"/>
+    <!--Titulo que aparece na aba-->
+    <title>Formulario_Curriculo</title>
+  </head>
+  <body>
+    <fieldset>
+    <div class='campo'>
+    <img src="jobs.png" alt="Logo" width=400 height=200/>
+              <p>&nbsp &nbsp Cadastro de Currículos</p>
+    <br>
+    <hr size="7" width = 95% noshade=”noshade”>
+    <br>
+    </div>
+    </fieldset>
+    <div>
+      <!--id serve para colocarmos o CSS-->
+    </div>
+   
+      <br />
+    <div class="campo">
+    <label id="subtitulo"><strong>DADOS PESSOAIS</strong></label>
+    </div>
+    </div>
+    <form>
+    <!--Separador/agrupador de campos, fieldset cria uma borda-->
+    <!--classes podem estar presentes em várias tags-->
+    <fieldset class="grupo">
+      <div class="campo">
+        <!--div cria divisões no html-->
+        <!--explicação do campo-->
+        <label for="nome"><strong>Nome Completo</strong></label>
+        <!--required coloca o *, não deixa passar sem-->
+        <input type="text" nome="nome" id="nome" size= 60 required/>
+      </div>
+
+      <div class="campo">
+        <label for="cargo"><strong>Cargo pretendido</strong></label>
+        <input type="text" cargo="cargo" id="cargo" size= 37 required/>
+      </div>
+
+    </fieldset>
+    <fieldset class="grupo">
+    <div class="campo">
+      <label for="email"><strong>Email</strong></label>
+      <input type="email" nome="email" id="email" size = 50 required/>
+    </div>
+      <div class="campo">
+      <label for="fone"><strong>Telefone</strong></label>
+      <input type="text" nome="fone" id="fone" size = 20 required/>
+    </div>
+  </fieldset>
+    <br>
+    <fieldset class = "grupo">
+    <div class="campo">
+      <label for="data de nascimento"><strong>Data de Nascimento</strong></label>
+      <input id="date" type="date" >
+    </div>
+
+    <div class="campo">
+    <label for="estado civil"><strong>Estado Civil</strong></label>
+          <!--opção de multipla escolha-->
+       <select id="estado civil">
+        <option select disable value="" required></option>
+        <option> Casado</option>
+        <option> Solteiro</option>
+        <option> União Estavel</option>
+        <option> Outros</option>
+      </select>
+    </div>
+
+    <div class="campo">
+       <label for="sexo"><strong>Sexo</strong></label>
+          <!--opção de multipla escolha-->
+       <select id="sexo">
+        <option select disable value="" required></option>
+        <option> Masculino</option>
+        <option> Feminino</option>
+        <option> Outros</option>
+      </select>
+      <!-- <label><strong>Sexo</strong></label>
+     </label><input type="radio" nome="sexo" value="masculino" />Masculino</label>
+      <label><input type="radio" nome="sexo" value="feminino" />Feminino </label>
+      <label> Outros: <br><input type="text" nome="sexo" id="Outros" /> </label> -->
+    </div>
+    <br>
+  </fieldset>
+  <fieldset class="grupo">
+
+      <div class="campo">
+        <label for="cep"><strong>CEP</strong></label>
+        <input type="text" cep="cep" id="cep" size= 10 required/>
+      </div>
+
+      <div class="campo">
+        <label for="endereco"><strong>Endereço</strong></label>
+        <input type="text" endereco="endereco" id="endereco" size= 70 required/>
+      </div>
+      
+      <div class="campo">
+        <label for="numero"><strong>Nro:</strong></label>
+        <input type="text" num="numero" id="numero" size= 7 required/>
+      </div>
+      <br>
+    </fieldset>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="endereco"><strong>Bairro</strong></label>
+        <input type="text" bairro="bairro" id="bairro" size= 25 required/>
+      </div>
+
+       <div class="campo">
+        <label for="cidade"><strong>Cidade</strong></label>
+        <input type="text" cidade="cidade" id="cidade" size= 20 required/>
+      </div>
+       <div class="campo">
+        <label for="estado"><strong>Estado</strong></label>
+        <input type="text" estado="estado" id="estado" size= 20 required/>
+      </div>
+     <br>
+    </fieldset>
+    <div class="campo">
+    <label id="subtitulo"><strong>DOCUMENTOS</strong></label>
+    </div>
+
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="identidade"><strong>Identidade</strong></label>
+        <input type="text" identidade="identidade" id="identidade" size= 20 required/>
+      </div>
+      <div class="campo">
+        <label for="cpf"><strong>CPF</strong></label>
+        <input type="text" cpf="cpf" id="cpf" size= 20 required/>
+      </div>
+      <div class="campo">
+        <label for="cnh"><strong>CNH</strong></label>
+        <input type="text" cnh="cnh" id="cnh" size= 20 required/>
+      </div>
+      </fieldset>
+      <div class="campo">
+       <label for="carro"><strong>Possui carro?</strong></label>
+       <select id="carro">
+        <option select disable value="" required></option>
+        <option> Sim</option>
+        <option> Não</option>
+      </select>
+     
+    </div>
+    <fieldset class="grupo">
+      <div id="check">
+        <label><strong>Tecnologias que voce conhece</strong></label><br /><br />
+        <input type="checkbox" id="tecnologia" value="HTML" />
+        <label for="tecnologia">HTML</label>
+        <input type="checkbox" id="tecnolgia2" value="CSS" />
+        <label for="tecnologia2">CSS</label>
+        <input type="checkbox" id="tecnolgia3" value="PHP" />
+        <label for="tecnologia2">PHP</label>
+        <input type="checkbox" id="tecnolgia3" value="JAVASCRIPT" />
+        <label for="tecnologia2">JAVASCRIPT</label>
+        <input type="checkbox" id="tecnolgia4" value="PYTHON" />
+        <label for="tecnologia2">PYTHON</label>
+        <input type="checkbox" id="tecnolgia5" value="SQL" />
+        <label for="tecnologia2">SQL</label>
+        <input type="checkbox" id="outros" value="Outros" />
+        <label for="tecnologia2">Outros</label>
+      </div>
+    </fieldset class="grupo">
+
+    <div class="campo">
+      <br />
+      <label><strong>Conte um pouco de sua experiência</strong></label>
+      <!--Define a área para a digitação de um texto-->
+      <textarea rows="3" style="width: 650px" id="experiencia" size= 400></textarea>
+    </div>
+    <br>
+    <button class="botao" type="submit">Concluido</button>
+
+    
+</form>
+  </body>
+</html>
